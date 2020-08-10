@@ -53,3 +53,5 @@ driverlib and compiler version, then reaplace the project with this template and
 ## Notes :
 
 This template was tested on Arch Linux with Code Composer version 9 and version 10.
+
+Original idea from : [Akobyl](https://github.com/akobyl/TM4C129_FreeRTOS_Demo)
