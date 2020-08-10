@@ -1,4 +1,6 @@
-# Project Zero (FreeRTOS for TivaC TM4C1294NCPDT build on Code Composer Studio)
+# Project Zero (FreeRTOS for TivaC TM4C1294NCPDT)
+
+## Build on Code Composer Studio
 
 This is the project zero structure in order to configure and
 build a FreeRTOS project for Tiva C on Code Composer Studio.
@@ -43,3 +45,11 @@ The latest FreeRTOS sources and ports can be downloaded from [FreeRTOS](https://
 as well as the FreeRTOS documentation.
 The _Board_ file includes the routine to initialize the system clock to 120MHz before passing control
 to FreeRTOS.
+
+In order to create a new project from this template just select a new baremetal _blinky_ example
+at _Code Composer Studio_ _Resource Explorer_ to create a new configurated project with
+driverlib and compiler version, then reaplace the project with this template and build.
+
+## Notes :
+
+This template was tested on Arch Linux with Code Composer version 9 and version 10.
