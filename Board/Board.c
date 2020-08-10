@@ -11,10 +11,13 @@
 
 void Board_init(){
     // Initialize system clock to 120 MHz
-    ASSERT( SysCtlClockFreqSet(
-                               (SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN |
-                                SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480),
-                               SYSTEM_CLOCK) == SYSTEM_CLOCK);
+    if( SysCtlClockFreqSet((SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN |
+        					SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480),
+        					SYSTEM_CLOCK) !=
+		SYSTEM_CLOCK )
+	{
+		__error__(__FILE__,__LINE__);
+	}
 }
 
 ///  ASSERT() Error function
