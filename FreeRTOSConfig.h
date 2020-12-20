@@ -99,11 +99,12 @@ to all Cortex-M ports, and do not rely on any particular library functions. */
 /* The configPRE_SLEEP_PROCESSING() and configPOST_SLEEP_PROCESSING() macros
 allow the application writer to add additional code before and after the MCU is
 placed into the low power state respectively.  The empty implementations
-provided in this demo can be extended to save even more power. */
+provided in this demo can be extended to save even more power.
 void vPreSleepProcessing( unsigned long xExpectedIdleTime );
 void vPostSleepProcessing( unsigned long xExpectedIdleTime );
 #define configPRE_SLEEP_PROCESSING( xExpectedIdleTime ) vPreSleepProcessing( xExpectedIdleTime );
 #define configPOST_SLEEP_PROCESSING( xExpectedIdleTime ) vPostSleepProcessing( xExpectedIdleTime );
+*/
 
 /* Definitions that map the FreeRTOS port interrupt handlers to their CMSIS
 standard names. */
